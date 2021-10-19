@@ -5,7 +5,7 @@
     
 }
 
-.productsConatiner{
+.productsContainer{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,24 +18,27 @@
    margin: auto;
    transition: all .8s ease;
 }
-.productsConatiner hr{
+.productsContainer hr{
     color: rgb(199, 199, 204);
     margin-top: 0 ;
     
 }
 .item{
+    width: 250px;
+    height: 500px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
 }
 .item img{
     
-    max-width: 180px;
+    max-width: 150px;
     
 }
 .item h2{
     color: rgb(66, 65, 65);
 }
 .itemContainer{
+    width: 250px;
     height: 500px;
     border: solid 1px rgba(212, 212, 212, 0.568);
     background: white;

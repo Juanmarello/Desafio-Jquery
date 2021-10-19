@@ -49,51 +49,11 @@ const producto1 = new products(
              productsList.push(producto2);
              productsList.push(producto3);
 
+         
 
 
 
-
-    function renderItems(){
-
-        let cartSubtotal = 0;
-
-        for (const item of productsList)  {
-            let productsContainer = document.getElementById('productsContainer');
-            productsContainer.classList.add('item');
-           
-            let itemContainer = document.createElement('div');
-            itemContainer.classList.add('itemContainer');
-           
-            let wish = document.createElement('img');
-            wish.setAttribute("src", "1.png");
-            itemContainer.appendChild(wish);
-            
-            itemContainer.innerHTML = `<h2> ${item.name}</h2>
-                                        <div class="wishDiv" id="wishDiv"></div>
-                                       <hr>
-                                        <p>${item.description}</p>
-                                        <img src=${item.image}>
-                                        <h3><b>$ ${item.price}</b></h3>
-                                       
-            `
-            
-            let btnAdd = document.createElement('button');
-            btnAdd.classList.add('btnAdd');
-            btnAdd.textContent = "Añadir al carrito";
-            itemContainer.appendChild(btnAdd);
-            productsContainer.appendChild(itemContainer);
-            btnAdd.addEventListener('click', addToCart);
-            
-            let wishConatiner = document.createElement('div');
-            wishConatiner.classList.add('wishConatiner');
-            itemContainer.appendChild(wishConatiner)
-
-            let btnWish = document.createElement('button');
-            btnWish.classList.add('btnWish');
-            btnWish.textContent = "WishList";
-            btnWish.addEventListener('click', addToWishList);
-            wishConatiner.appendChild(btnWish);
-
+   
     
             
             function addToWishList(){
@@ -144,7 +104,7 @@ function addToCart (){
 
                 
             }  
-}
+
 
 
            
@@ -152,14 +112,14 @@ function addToCart (){
              
             
 
-};
+
  
 
     
            
     
 
-    renderItems();
+  
         
               
         

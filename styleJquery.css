@@ -1,0 +1,13 @@
+.containerPlay{
+margin-top: 50px;
+    display: grid;
+grid-template-columns: repeat(3, 1fr);
+
+}
+.play {
+   
+    width: 100px;
+    height: 100px;
+    background: rgb(0, 138, 103);
+    box-shadow: 5px 5px 15px rgb(180, 178, 178) ;
+}
